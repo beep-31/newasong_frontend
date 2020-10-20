@@ -1,9 +1,23 @@
 //out: false
 //main: ../css/style.css
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
 .page-header{
-    background-color: #778ca3;
+    background-color: #282a2c7c;
     height: 56px;
     width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .page-header__links{
@@ -38,6 +52,9 @@
     border-radius: 50%;
     width: 32px;
     margin-right: 3px;
+    animation-name: rotate;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
 }
 
 .page-header__burger{
@@ -52,10 +69,11 @@
 .burger-item--closed{
     display: flex;
     width: 23px;
-    height: 4px;
+    height: 3px;
     position: relative;
     background-color: #fff;
     transition: 0.1s linear;
+    border-radius: 2px;
     &::after{
         display: block;
         content: "";
@@ -63,8 +81,9 @@
         top: 7px;
         left: 0px;
         width: 23px;
-        height: 4px;
+        height: 3px;
         background-color: #fff;
+        border-radius: 2px;
     }
     &::before{
         display: block;
@@ -73,15 +92,16 @@
         top: -7px;
         left: 0px;
         width: 23px;
-        height: 4px;
+        height: 3px;
         background-color: #fff;
+        border-radius: 2px;
     }
 }
 
 .burger-item--opened{
     display: flex;
     width: 23px;
-    height: 4px;
+    height: 3px;
     position: relative;
     background-color: #fff;
     transform: rotate(-45deg);

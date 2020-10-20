@@ -28,15 +28,47 @@ li {
   list-style: none;
 }
 @font-face {
-  font-family: "Yellowtail";
+  font-family: 'Yellowtail';
   src: url('../fonts/Yellowtail-Regular.ttf') format('truetype'), url('../fonts/Yellowtail-Regular.woff') format('woff'), url('../fonts/Yellowtail-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: italic;
 }
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato/Lato-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato/Lato-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato/Lato-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .page-header {
-  background-color: #778ca3;
+  background-color: #282a2c7c;
   height: 56px;
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.page-header__links {
+  display: none;
 }
 .page-header__wrapper {
   display: flex;
@@ -64,6 +96,9 @@ li {
   border-radius: 50%;
   width: 32px;
   margin-right: 3px;
+  animation-name: rotate;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
 }
 .page-header__burger {
   order: 2;
@@ -75,10 +110,11 @@ li {
 .burger-item--closed {
   display: flex;
   width: 23px;
-  height: 4px;
+  height: 3px;
   position: relative;
   background-color: #fff;
   transition: 0.1s linear;
+  border-radius: 2px;
 }
 .burger-item--closed::after {
   display: block;
@@ -87,8 +123,9 @@ li {
   top: 7px;
   left: 0px;
   width: 23px;
-  height: 4px;
+  height: 3px;
   background-color: #fff;
+  border-radius: 2px;
 }
 .burger-item--closed::before {
   display: block;
@@ -97,13 +134,14 @@ li {
   top: -7px;
   left: 0px;
   width: 23px;
-  height: 4px;
+  height: 3px;
   background-color: #fff;
+  border-radius: 2px;
 }
 .burger-item--opened {
   display: flex;
   width: 23px;
-  height: 4px;
+  height: 3px;
   position: relative;
   background-color: #fff;
   transform: rotate(-45deg);
@@ -119,4 +157,41 @@ li {
   background-color: #fff;
   transform: rotate(90deg);
   border-radius: 2px;
+}
+.intro {
+  background: linear-gradient(135deg, rgba(0, 64, 77, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../img/intro-bg.jpg");
+  background-size: cover;
+  background-position: bottom bottom;
+  background-repeat: no-repeat;
+  padding-top: 160px;
+  padding-bottom: 60px;
+}
+.intro__wrapper {
+  max-width: 280px;
+  margin: 0 auto;
+  width: 100%;
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+.intro__txt {
+  text-align: center;
+}
+.intro__txt__title {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+.intro__txt__location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.intro__txt__location h5 {
+  font-weight: 300;
+  color: #e6e6e6;
+}
+.intro__txt__description {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 80px;
 }
