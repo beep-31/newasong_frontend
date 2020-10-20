@@ -1,0 +1,100 @@
+//out: false
+//main: ../css/style.css
+.page-header{
+    background-color: #778ca3;
+    height: 56px;
+    width: 100%;
+}
+
+.page-header__links{
+    display: none;
+}
+
+.page-header__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    max-width: @mobile-wrapper;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.logo-txt{
+    font-family: 'Yellowtail', cursive;
+    font-size: 24px;
+    color: #fff;
+    order: 2;
+}
+
+.page-header__logo{
+    display: flex;
+    align-items: center;
+}
+.logo-img{
+    order: 1;
+}
+.logo-img img{
+    border-radius: 50%;
+    width: 32px;
+    margin-right: 3px;
+}
+
+.page-header__burger{
+    order: 2;
+}
+
+.burger-item{
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.burger-item--closed{
+    display: flex;
+    width: 23px;
+    height: 4px;
+    position: relative;
+    background-color: #fff;
+    transition: 0.1s linear;
+    &::after{
+        display: block;
+        content: "";
+        position: absolute;
+        top: 7px;
+        left: 0px;
+        width: 23px;
+        height: 4px;
+        background-color: #fff;
+    }
+    &::before{
+        display: block;
+        content: "";
+        position: absolute;
+        top: -7px;
+        left: 0px;
+        width: 23px;
+        height: 4px;
+        background-color: #fff;
+    }
+}
+
+.burger-item--opened{
+    display: flex;
+    width: 23px;
+    height: 4px;
+    position: relative;
+    background-color: #fff;
+    transform: rotate(-45deg);
+    border-radius: 2px;
+    transition: 0.1s linear;
+    &::after{
+        content: "";
+        display: block;
+        width: 23px;
+        height: 4px;
+        position: absolute;
+        background-color: #fff;
+        transform: rotate(90deg);
+        border-radius: 2px;
+    }
+}
