@@ -1,11 +1,14 @@
 //out: false
 .mobile-navbar{
     position: fixed;
-    right: 0px;
+    right: -320px;
+    top: 0px;
     background-color: rgb(63, 63, 63);
     color: white;
     width: 320px;
     height: 100vh;
+    transition: 300ms linear;
+    z-index: 10;
 }
 
 .mobile-navbar__wrapper{
@@ -68,8 +71,9 @@
 
 .navbar__item a{
     font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    margin: 3px 0px;
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: rgba(233, 233, 233, 0.90);
 }
 

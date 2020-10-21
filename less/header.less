@@ -18,6 +18,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 5;
 }
 
 .page-header__links{
@@ -98,23 +99,3 @@
     }
 }
 
-.burger-item--opened{
-    display: flex;
-    width: 23px;
-    height: 3px;
-    position: relative;
-    background-color: #fff;
-    transform: rotate(-45deg);
-    border-radius: 2px;
-    transition: 0.1s linear;
-    &::after{
-        content: "";
-        display: block;
-        width: 23px;
-        height: 4px;
-        position: absolute;
-        background-color: #fff;
-        transform: rotate(90deg);
-        border-radius: 2px;
-    }
-}
