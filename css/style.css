@@ -63,7 +63,7 @@ li {
   background-color: #282a2c7c;
   height: 56px;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 5;
@@ -144,8 +144,8 @@ li {
   background-size: cover;
   background-position: bottom bottom;
   background-repeat: no-repeat;
-  padding-top: 160px;
-  padding-bottom: 60px;
+  padding-top: 220px;
+  height: 100vh;
 }
 .intro__wrapper {
   max-width: 280px;
@@ -180,7 +180,7 @@ li {
   position: fixed;
   right: -320px;
   top: 0px;
-  background-color: #3f3f3f;
+  background-color: rgba(0, 0, 0, 0.9);
   color: white;
   width: 320px;
   height: 100vh;
@@ -245,4 +245,48 @@ li {
   font-size: 20px;
   margin-bottom: 12px;
   color: rgba(233, 233, 233, 0.9);
+}
+.services {
+  background-color: #111414;
+  padding: 50px 0px;
+}
+.services svg {
+  width: 90px;
+  height: 90px;
+}
+.services__wrapper {
+  max-width: 280px;
+  width: 100%;
+  margin: 0 auto;
+}
+.services__block__img img {
+  width: 290px;
+  height: auto;
+  margin: 0 auto;
+}
+.services__block {
+  font-family: 'Lato', sans-serif;
+  color: #bebebe;
+  margin-bottom: 50px;
+}
+.services__block__title h3 {
+  margin-top: 10px;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 8px;
+}
+.services__block__title h3::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 50px;
+  display: block;
+  border-top: 1px solid white;
+  padding: 8px 0px;
+  z-index: 20;
+  top: 27px;
+  left: 1px;
+}
+.services__block__description p {
+  font-size: 14px;
 }
