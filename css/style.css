@@ -66,7 +66,7 @@ li {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 5;
+  z-index: 20;
 }
 .page-header__links {
   display: none;
@@ -139,12 +139,36 @@ li {
   background-color: #fff;
   border-radius: 2px;
 }
+.burger__item--opened {
+  width: 30px;
+  height: 3px;
+  position: relative;
+  background-color: #fff;
+  transform: rotate(-45deg);
+  border-radius: 2px;
+  transition: 0.1s linear;
+}
+.burger__item--opened::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  position: absolute;
+  background-color: #fff;
+  transform: rotate(90deg);
+  border-radius: 2px;
+  top: -0.5px;
+}
+.burger__item--opened::after {
+  content: "";
+  display: none;
+}
 .intro {
   background: linear-gradient(135deg, rgba(0, 64, 77, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../img/intro-bg.jpg");
   background-size: cover;
   background-position: bottom bottom;
   background-repeat: no-repeat;
-  padding-top: 220px;
+  padding-top: 32vh;
   height: 100vh;
 }
 .intro__wrapper {
@@ -283,7 +307,6 @@ li {
   display: block;
   border-top: 1px solid white;
   padding: 8px 0px;
-  z-index: 20;
   top: 27px;
   left: 1px;
 }
