@@ -2,10 +2,101 @@
 
 .contact{
     background-color: #111414;
+    padding: 60px 0px;
 }
 
 .contact__wrapper{
     max-width: @mobile-wrapper;
     width: 100%;
     margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+.contact__title{
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.contact__form__input,
+.contact__form__textarea{
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.contact__form__textarea{
+    height: 100px;
+    margin-top: 20px;
+}
+
+.contact__form__textarea textarea{
+    height: 100%;
+}
+
+.contact__form__input input, 
+.contact__form__textarea textarea{
+    width: 100%;
+    border: 0;
+    border-bottom: 3px solid #f3f3f3;
+    outline: none;
+    font-size: 18px;
+    background: transparent;
+    transition: 0.15s linear;
+    color: #f3f3f3;
+    &:focus{
+        outline: none !important;
+        border-color: rgba(255, 123, 0, 0.9);
+    } 
+
+    &:focus + label{
+        top: -10px;
+        font-size: 10px;
+    }
+
+    &:valid + label{
+        top: -10px;
+        font-size: 10px;
+    }
+}
+
+.contact__form__input label,
+.contact__form__textarea label{
+    position: absolute;
+    top: 0;
+    display: block;
+    color: #cecece;
+    font-size: 14px;
+    transition: 0.2s linear;
+}
+
+.contact__form__button{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.contact__form__button button{
+    padding: 10px 40px;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.1s linear;
+    margin-bottom: 10px;
+    &:hover{
+        background-color: rgba(255, 123, 0, 1);
+        border: 2px solid #fff;
+    }
+}
+
+.contact__form__button p{
+    font-size: 12px;
+    color: grey;
 }

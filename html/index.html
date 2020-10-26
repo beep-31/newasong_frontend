@@ -149,7 +149,7 @@
                 <h3>Quienes somos?</h3>
             </div>
             <div class="about-us__description">
-                <p>Somos un equipo que intenta a sacar todo el potencial de artistas</p>
+                <p>Somos un equipo que intenta a sacar todo el potencial de los artistas</p>
             </div>
             <div class="about-us__contact">
                 <a href="#contact" class="about-us__contact-btn">Contactar</a>
@@ -158,7 +158,33 @@
     </section>
     <section class="contact" id="contact">
         <div class="contact__wrapper">
-            
+            <div class="contact__title">
+                <h3>Contacta con nosotros</h3>
+            </div>
+            <div class="contact__form">
+                <form action="#" id="form">
+                    <div class="contact__form__input">
+                        <input type="text" name="name" class="name-input" id="input__name" autocomplete="off" required>
+                        <label for="name" class="input__label" id="name__label">Nombre*</label>
+                    </div>
+                    <div class="contact__form__input contact__form__input--email">
+                        <input type="email" name="email" id="input__email" class="email-input" autocomplete="off" required>
+                        <label for="email" class="input__label" id="email__label">Email*</label>
+                    </div>
+                    <div class="contact__form__input contact__form__input--title">
+                        <input type="text" name="title" id="input__title" class="title-input" autocomplete="off" required>
+                        <label for="title" class="input__label" id="title__label">Título</label>
+                    </div>
+                    <div class="contact__form__textarea">
+                        <textarea name="textarea" id="textarea" required></textarea>
+                        <label for="textarea">Mensaje*</label>
+                    </div>
+                    <div class="contact__form__button">
+                        <p>* - necesario de rellenar</p>
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
     <script src="../js/script.js"></script>
