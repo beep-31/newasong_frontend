@@ -28,8 +28,8 @@ email_input.addEventListener('focusout', function(){
     } else {
         email_input.style.borderColor = '#f3f3f3';
         email_label.style.color = '#f3f3f3';
-        email_label.style.top = '0px';
-        email_label.style.fontSize = '14px';
+        email_label.style.top = '-10px';
+        email_label.style.fontSize = '10px';
     }
 
     if(email_input.value == ''){
