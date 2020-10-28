@@ -432,6 +432,7 @@ textarea {
   color: #cecece;
   font-size: 14px;
   transition: 0.2s linear;
+  z-index: 8;
 }
 .contact__form__button {
   display: flex;
@@ -460,4 +461,33 @@ textarea {
 .contact__form__button p {
   font-size: 12px;
   color: grey;
+}
+.music {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0.23) 100%), url('../img/prodack.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.music__wrapper {
+  max-width: 280px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Lato', sans-serif;
+  padding: 60px 0px;
+}
+.music__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 100px;
+  color: white;
+}
+.music__links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.music__link {
+  align-self: flex-end;
 }
