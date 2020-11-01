@@ -482,96 +482,54 @@ textarea {
   font-size: 12px;
   margin-bottom: 20px;
 }
-.music {
+.contact__form__politics {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
-.music hr {
-  border: none;
-  height: 2px;
+.contact__form__politics p {
+  color: #cecece;
+  margin-left: 5px;
 }
-.music__youtube {
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0.23) 100%), url('../img/prodack.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 268px;
+.contact__form__politics p > a {
+  color: #ff7b00;
 }
-.music__spotify {
-  height: 268px;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(30, 215, 96, 0.15) 100%), url('../img/PikFlow.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center top;
+.footer {
+  background-color: #282a2c;
+  font-family: 'Lato', sans-serif;
+  padding: 20px 0px;
 }
-.music__soundcloud {
-  height: 268px;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(254, 80, 0, 0.23) 100%), url('../img/Xavi.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center top;
-}
-.music__wrapper {
+.footer__wrapper {
   max-width: 280px;
   width: 100%;
   margin: 0 auto;
-  height: 100%;
-  font-family: 'Lato', sans-serif;
-  padding-top: 30px;
-  padding-bottom: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-}
-.music__title {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 300;
-  margin-bottom: 100px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 5px;
-}
-.music__link {
-  display: flex;
-  width: 100%;
-}
-.music__link--spotify {
-  height: 100%;
-  flex-direction: row;
-}
-.music__link--youtube {
-  flex-direction: column;
-  align-self: flex-end;
-  justify-self: flex-end;
-}
-.music__link--soundcloud {
-  flex-direction: row-reverse;
-  height: 100%;
-}
-.music__link__btn svg {
-  width: 20px;
-  height: 20px;
-  margin-top: 2px;
-  margin-left: 5px;
-}
-.music__link__btn {
-  display: flex;
+  justify-content: center;
   align-items: center;
-  color: white;
-  text-transform: uppercase;
-  font-weight: 400;
-  transition: 0.1s linear;
-  background-color: transparent;
-  padding: 5px 10px;
-  border: 3px solid #282a2c;
-  align-self: flex-end;
-  border-radius: 5px;
 }
-.music__link__btn:hover {
-  background-color: white;
-  color: #282a2c;
-  border-color: white;
+.footer__logo img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+.footer__description {
+  font-size: 16px;
+  color: grey;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.footer__social {
+  display: flex;
+  justify-content: space-around;
+  width: 85%;
+  margin-bottom: 30px;
+}
+.footer__social__item svg {
+  width: 25px;
+  height: 25px;
+}
+.footer__bottom {
+  background-color: #111414;
 }
