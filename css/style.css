@@ -192,7 +192,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 70px;
+  margin-bottom: 13vh;
 }
 .intro__txt__location h5 {
   font-weight: 300;
@@ -201,7 +201,7 @@ textarea {
 .intro__txt__description {
   font-size: 16px;
   font-weight: 300;
-  margin-bottom: 80px;
+  margin-bottom: 10vh;
 }
 .intro__btn {
   color: white;
@@ -340,6 +340,9 @@ textarea {
 }
 .services__block__description p {
   font-size: 14px;
+}
+.services__block__description p > a {
+  color: #ff7d00;
 }
 .about-us__wrapper {
   max-width: 280px;
@@ -519,6 +522,10 @@ textarea {
   justify-content: center;
   align-items: center;
 }
+.footer__logo {
+  text-align: center;
+  margin-bottom: 5px;
+}
 .footer__logo img {
   width: 100px;
   height: auto;
@@ -573,4 +580,57 @@ textarea {
   width: 35px;
   height: 35px;
   fill: #fff;
+}
+.music {
+  background-color: #111414;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  padding: 70px 0px;
+}
+.music__wrapper {
+  max-width: 280px;
+  width: 100%;
+  margin: 0 auto;
+}
+.music__title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.music__description {
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.music__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.music__block__title {
+  margin-bottom: 5px;
+}
+.music__block__title h3 {
+  font-weight: 300;
+}
+.music__block__img {
+  max-width: 280px;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+}
+.music__block__img--newashot {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0.13) 100%), url('../img/prodack.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.music__block__img--newafree {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 0, 179, 0.13) 100%), url('../img/PinkFlow.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.music__block__right p {
+  font-size: 14px;
+  color: #bebebe;
+  margin-bottom: 12px;
 }
