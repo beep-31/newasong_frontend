@@ -169,7 +169,7 @@ textarea {
 .intro {
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 174, 0, 0.13) 100%), url("../img/intro-bg.jpg");
   background-size: cover;
-  background-position: bottom bottom;
+  background-position: bottom left;
   background-repeat: no-repeat;
   padding-top: 35vh;
   height: 100vh;
@@ -192,7 +192,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
 }
 .intro__txt__location h5 {
   font-weight: 300;
@@ -202,6 +202,16 @@ textarea {
   font-size: 16px;
   font-weight: 300;
   margin-bottom: 80px;
+}
+.intro__btn {
+  color: white;
+  text-transform: uppercase;
+  border: 3px solid #fff;
+  border-radius: 20px;
+  background-color: transparent;
+  padding: 10px 40px;
+  font-weight: 300;
+  font-family: 'Lato', sans-serif;
 }
 .mobile-navbar {
   position: fixed;
@@ -493,7 +503,7 @@ textarea {
   margin-left: 5px;
 }
 .contact__form__politics p > a {
-  color: #ff7b00;
+  color: #ff7d00;
 }
 .footer {
   background-color: #282a2c;
@@ -512,7 +522,15 @@ textarea {
 .footer__logo img {
   width: 100px;
   height: auto;
-  margin-bottom: 20px;
+}
+.footer__text p {
+  color: grey;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.footer__title h3 {
+  font-family: 'Yellowtail', cursive;
+  color: #fff;
 }
 .footer__description {
   font-size: 16px;
@@ -522,14 +540,37 @@ textarea {
 }
 .footer__social {
   display: flex;
-  justify-content: space-around;
-  width: 85%;
-  margin-bottom: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 150px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+.footer__social__item {
+  width: 33%;
+  padding: 10px;
+}
+.footer__social__item a {
+  width: 100%;
+  max-width: 70px;
+  height: 70px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff7b00;
+  border-radius: 100%;
+  transition: 0.1s linear;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+}
+.footer__social__item a:hover {
+  background-color: #cc6300;
 }
 .footer__social__item svg {
-  width: 25px;
-  height: 25px;
-}
-.footer__bottom {
-  background-color: #111414;
+  width: 35px;
+  height: 35px;
+  fill: #fff;
 }
