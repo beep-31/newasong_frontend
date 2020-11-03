@@ -84,3 +84,46 @@
     fill: #fff;
 }
 
+.footer__contact{
+    margin-bottom: 15px;
+}
+
+.footer__contact__title > h3{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.footer__contact__inner svg{
+    width: 20px;
+    height: 20px;
+    fill: grey;
+    margin-right: 5px;
+}
+
+.footer__contact__gmail p, 
+.footer__contact__phone p{
+    display: flex;
+    align-items: center;
+    color: grey;
+    justify-content: center;
+}
+
+@media (min-width:@tablet-width){
+    .footer__wrapper{
+        max-width: @tablet-wrapper;
+    }
+
+    .footer__social__item{
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__social{
+        margin: 0 auto;
+    }
+}

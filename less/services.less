@@ -55,3 +55,23 @@
 .services__block__description p > a{
     color: #ff7d00;
 }
+
+@media (min-width: @tablet-width){
+    .services__wrapper{
+        max-width: @tablet-wrapper;
+    }
+
+    .services__blocks{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .services__block{
+        width: 50%;
+    }
+
+    .services__block__img img{
+        min-width: 280px;
+        min-height: 187px;
+    }
+}
