@@ -27,6 +27,9 @@
     font-family: 'Lato', sans-serif;
     color: rgb(190, 190, 190);
     margin-bottom: 50px;
+    &:last-child{
+        margin-bottom: 0px;
+    }
 }
 
 .services__block__title h3{ 
@@ -60,18 +63,42 @@
     .services__wrapper{
         max-width: @tablet-wrapper;
     }
-
     .services__blocks{
         display: flex;
         flex-wrap: wrap;
+        width: 100%;
     }
-
     .services__block{
         width: 50%;
+        &:nth-child(n-2){
+            margin-bottom: 0px;
+        }
     }
-
     .services__block__img img{
         min-width: 280px;
         min-height: 187px;
+    }
+
+    .services__block__description{
+        max-width: 280px;
+    }
+
+    .services__block__description p{
+        font-size: 16px;
+    }
+}
+
+@media (min-width: @desktop-width){
+    .services__wrapper{
+        max-width: @desktop-wrapper;
+    }
+
+    .services__block{
+        width: 25%;
+        margin-bottom: 0px;
+    }
+
+    .services__blocks{
+        justify-content: space-between;
     }
 }
