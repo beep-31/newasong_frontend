@@ -70,7 +70,7 @@
     }
     .services__block{
         width: 50%;
-        &:nth-child(n-2){
+        &:nth-child(n+2){
             margin-bottom: 0px;
         }
     }
@@ -91,6 +91,10 @@
 @media (min-width: @desktop-width){
     .services__wrapper{
         max-width: @desktop-wrapper;
+    }
+
+    .services{
+        padding: 100px 0px;
     }
 
     .services__block{
